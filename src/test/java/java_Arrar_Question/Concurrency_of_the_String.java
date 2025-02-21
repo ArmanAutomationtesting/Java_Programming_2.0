@@ -2,13 +2,13 @@ package java_Arrar_Question;
 
 public class Concurrency_of_the_String {
 
-    public static  int strStr(String haystack, String needle) {
+    public static  String strStr(String haystack, String needle) {
         for (int i = 0, j = needle.length(); j <= haystack.length(); i++, j++) {
            if(haystack.substring(i,j).equals(needle)){
-               return i;
+               return haystack.substring(i,j);
            }
         }
-        return -1;
+        return haystack;
     }
 
 
