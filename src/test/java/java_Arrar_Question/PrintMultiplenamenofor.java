@@ -5,7 +5,8 @@ public class PrintMultiplenamenofor {
     public static void print(String name,int count){
         if(count <=0) return;
         System.out.println(name);
-        print("Altamash",count-1);
+        count--;
+        print("Altamash",count);
     }
 
     public static void main(String[] args) {

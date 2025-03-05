@@ -12,18 +12,18 @@ public class String1 {
 
         // "i love programing" to "I Love Programing"
 
-//        String str = "i love programing";
-//        String[] str1 = str.split(" ");
-//        System.out.println(Arrays.asList(str1));
-//        StringBuilder stringBuilder = new StringBuilder();
-//
-//        for(String word : str1){
-//           String cap = (word.substring(0,1).toUpperCase()
-//           + word.substring(1).toLowerCase());
-//           stringBuilder.append(cap).append(" ");
-//        }
-//
-//        System.out.println(stringBuilder.toString().trim());
+        String str = "i love programing";
+        String[] str1 = str.split(" ");
+        System.out.println(Arrays.asList(str1));
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for(String word : str1){
+           String cap = (word.substring(0,1).toUpperCase()
+           + word.substring(1).toLowerCase());
+           stringBuilder.append(cap).append(" ");
+        }
+
+        System.out.println(stringBuilder.toString().trim());
 
 
         // Third largest number
@@ -68,16 +68,16 @@ public class String1 {
 //        return map;
 //    }
 
-        int[] arr = {3,4,5,7,8,5,7};
-        int left = 0;
-        int right = arr.length-1;
-        while(left<right){
-            int temp = arr[right];
-            arr[right] = arr[left];
-            arr[left] = temp;
-            left++;
-            right--;
-        }
-        System.out.println(Arrays.toString(arr));
+//        int[] arr = {3,4,5,7,8,5,7};
+//        int left = 0;
+//        int right = arr.length-1;
+//        while(left<right){
+//            int temp = arr[right];
+//            arr[right] = arr[left];
+//            arr[left] = temp;
+//            left++;
+//            right--;
+//        }
+//        System.out.println(Arrays.toString(arr));
     }
 }

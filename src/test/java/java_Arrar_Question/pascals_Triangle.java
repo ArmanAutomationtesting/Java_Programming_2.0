@@ -8,20 +8,30 @@ public class pascals_Triangle {
 
     public static List<List<Integer>> generate(int numRows) {
         List<List<Integer>> List = new ArrayList<>();
+          //1,
+        // 1,1
+        // 1, 1, 1
+        // 1, 1 , 1
+        // 1, 1 , 1, 1
 
-        for (int i = 0; i < numRows; i++){
-            Integer[] integer = new Integer[i + 1];
+        List<List<Integer>> list = new ArrayList<>();
+
+        for(int i =0; i<numRows; i++){
+            Integer[] integer = new Integer[i+1];
             Arrays.fill(integer,1);
-            List.add(Arrays.asList(integer));
+            list.add(Arrays.asList(integer));
         }
-        for(int i = 2; i < numRows; i++){
-            for(int j = 1; j<List.get(i).size()-1.; j++){
-                List.get(i).set(j,List.get(i-1).get(j-1)+List.get(i-1).get(j));
+
+        for(int i =2; i<numRows; i++){
+            for(int j =1; j<list.get(i).size()-1; j++){
+                list.get(i).set(j,list.get(i).get(j-1)+list.get(i).get(j));
             }
         }
 
+        return list;
 
-return List;
+
+
 
     }
 

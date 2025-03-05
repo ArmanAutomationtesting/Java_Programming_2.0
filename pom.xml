@@ -27,13 +27,41 @@
       <version>4.19.1</version>
     </dependency>
 
+      <!-- Apache POI Core -->
+      <dependency>
+_       <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.2.3</version>
+      </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-    <dependency>
-      <groupId>org.apache.poi</groupId>
-      <artifactId>poi</artifactId>
-      <version>5.4.0</version>
-    </dependency>
+      <!-- XMLBeans (Required for POI) -->
+      <dependency>
+        <groupId>org.apache.xmlbeans</groupId>
+        <artifactId>xmlbeans</artifactId>
+        <version>5.2.0</version>
+      </dependency>
+
+      <!-- Commons Compress (Required for handling Excel files) -->
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-compress</artifactId>
+        <version>1.21</version>
+      </dependency>
+
+      <!-- Apache POI OOXML Schema -->
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml-schemas</artifactId>
+        <version>4.1.2</version>
+      </dependency>
+
+      <!-- Apache Commons Collections (Required for some POI functions) -->
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>4.4</version>
+      </dependency>
+
 
 
     <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->

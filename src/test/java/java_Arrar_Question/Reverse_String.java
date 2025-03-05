@@ -2,13 +2,14 @@ package java_Arrar_Question;
 
 public class Reverse_String {
     String reverseWords(String s) {
+        StringBuilder stringBuilder = new StringBuilder();
         String Str[] = s.split(" ");
         String Str1 = "";
         for(int i = Str.length-1 ; i >= 0 ; i-- ){
-            Str1+=Str[i] + " ";
+           stringBuilder.append(Str[i]+" ");
         }
-        System.out.println(Str1);
-        return Str1;
+        System.out.println(stringBuilder);
+        return stringBuilder.toString();
 
     }
     public static void main(String[] args){

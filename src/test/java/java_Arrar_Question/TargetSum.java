@@ -3,7 +3,7 @@ package java_Arrar_Question;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class Two_sum {
+public class TargetSum {
 
     public static int[] sumofTwonumber(int[] num, int x){
          int n = num.length;

@@ -20,7 +20,7 @@ public class String_reverse_Special_char {
             right--;
             }
         }
-        return new String(ch);
+        return String.valueOf(ch);
     }
 
     public static void main(String[] args) {
